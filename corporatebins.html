@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Corporate Bins</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+
+</head>
+<body>  
+
+    <section id="header">
+        <a href="index.html"><img src="images/logo.png" width="50" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">Home</a></li>
+
+                <li class="dropdown">
+                <a href="products.html" class="dropbtn">Products</a>
+                <div class="dropdown-content">
+                    <a href="products.html?collection=All Products">All Products</a>
+                    <a href="homebins.html">Home Bins</a>
+                    <a href="corporatebins.html">Corporate Bins</a>
+                    <a href="outdoorbins.html">Outdoor Bins</a>
+                </div>
+                </li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <section id="product1" class="section-p1">
+        <h2>Corporate Bins</h2>
+        <div class="pro-container">
+            <div class="pro" data-category="Corporate Bins">
+                <img src="images/medium ecobin.jpg" alt="" onclick="openModal('Office Bin', 100, 'Designed specifically for workplace environments, this spacious bin offers a clean and professional way to dispose of obsolete office electronics. It is perfect for desktops, keyboards, and other IT waste.', 'images/medium ecobin.jpg')">
+                <div class="des">
+                    <span>Corporate Bins</span>
+                    <h5>Office Bin</h5>
+                    <h4>RM 100</h4>
+                </div>
+                <a href="#" class="add-to-cart" data-name="Office Bin" data-price="100"><i class="cart">Add to Cart</i></a>
+            </div>
+            <div class="pro" data-category="Corporate Bins">
+                <img src="images/large ecobin.jpg" alt="" onclick="openModal('School Bin', 120, 'A high-capacity bin built for schools, encouraging students and staff to responsibly discard unused electronics. Its bright, approachable design promotes awareness and engagement with e-waste recycling.', 'images/large ecobin.jpg')">
+                <div class="des">
+                    <span>Corporate Bins</span>
+                    <h5>School Bin</h5>
+                    <h4>RM 120</h4>
+                </div>
+                <a href="#" class="add-to-cart" data-name="School Bin" data-price="120"><i class="cart">Add to Cart</i></a>
+            </div>
+        </div>
+    </section>
+
+    
+
+   <!-- Modal Structure -->
+   <div id="product-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-button" onclick="closeModal()">&times;</span>
+        <div class="modal-body">
+            <img id="modal-product-image" src="" alt="" class="modal-image">
+            <div class="modal-details">
+                <h2 id="modal-product-name"></h2>
+                <p id="modal-product-description"></p>
+                <p id="modal-product-price"></p>
+                
+                <button id="add-to-cart-button" onclick="addToCart(modalProductName, modalProductPrice)">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+    <script src="scriptJQuery.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+</body>
+</html>

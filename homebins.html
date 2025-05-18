@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Home Bins</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+
+</head>
+<body>  
+
+    <section id="header">
+        <a href="index.html"><img src="images/logo.png" width="50" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">Home</a></li>
+
+                <li class="dropdown">
+                <a href="products.html" class="dropbtn">Products</a>
+                <div class="dropdown-content">
+                    <a href="products.html?collection=All Products">All Products</a>
+                    <a href="homebins.html">Home Bins</a>
+                    <a href="corporatebins.html">Corporate Bins</a>
+                    <a href="outdoorbins.html">Outdoor Bins</a>
+                </div>
+                </li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+    
+    <section id="product1" class="section-p1">
+        <h2>Home Bins</h2>
+        <div class="pro-container">
+            <div class="pro" data-category="Home Bins">
+                <img src="images/small ecobin.jpg" alt="" onclick="openModal('Standard Ecobin', 35, 'The standard Ecobin is a durable bin specifically designed for home use. It has multiple slots for different types of material. The size is just enough to make sure it does not clutter your home.', 'images/small ecobin.jpg')">
+                <div class="des">
+                    <span>Home Bins</span>
+                    <h5>Standard Ecobin</h5>
+                    <h4>RM 35</h4>
+                </div>
+                <a href="#" class="add-to-cart" data-name="Standard Ecobin" data-price="35"><i class="cart">Add to Cart</i></a>
+            </div>
+            <div class="pro" data-category="Home Bins">
+                <img src="images/small ecobin2.jpg" alt="" onclick="openModal('Xtra Ecobin', 45, 'A larger home-use bin made to handle bulkier e-waste such as old laptops, printers, and gaming consoles. Perfect for tech-heavy households needing more room for safe disposal.', 'images/small ecobin2.jpg')">
+                <div class="des">
+                    <span>Home Bins</span>
+                    <h5>Xtra Ecobin</h5>
+                    <h4>RM 45</h4>
+                </div>
+                <a href="#" class="add-to-cart" data-name="Xtra Ecobin" data-price="45"><i class="cart">Add to Cart</i></a>
+            </div>
+        </div>
+
+   <!-- Modal Structure -->
+   <div id="product-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-button" onclick="closeModal()">&times;</span>
+        <div class="modal-body">
+            <img id="modal-product-image" src="" alt="" class="modal-image">
+            <div class="modal-details">
+                <h2 id="modal-product-name"></h2>
+                <p id="modal-product-description"></p>
+                <p id="modal-product-price"></p>
+                
+                <button id="add-to-cart-button" onclick="addToCart(modalProductName, modalProductPrice)">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+    <script src="scriptJQuery.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+</body>
+</html>
