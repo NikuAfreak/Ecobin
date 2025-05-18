@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecobin</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-rL+j+Z/rE9+r/r2k6rB+5rEym5BJo7yyjYU/1Fyo5cQ8lW/9N4/VtQIuG/iJQ" crossorigin="anonymous">
+</head>
+<body>  
+
+    <section id="header">
+        <a href="index.html"><img src="images/logo.png" width="50" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">Home</a></li>
+
+                <li class="dropdown">
+                <a href="products.html" class="dropbtn">Products</a>
+                <div class="dropdown-content">
+                    <a href="products.html?collection=All Products">All Products</a>
+                    <a href="products.html?collection=Flower Collection">Home Bins</a>
+                    <a href="products.html?collection=Square Collection">Corporate Bins</a>
+                    <a href="products.html?collection=Instant Collection">Outdoor Bins</a>
+                </div>
+                </li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+    
+    <section id="hero">
+        <h4>ECOBIN</h4>
+        <h2>Begin your change</h2>
+        <p>Let us dispose all unusable electronics for you!</p>
+        <a href="#newsletter"><button id="best-selling-btn">Learn More</button></a>
+    </section>
+
+    <section id="newsletter" class="section-p1 section-m1">
+            <div class="newstext">
+              <h4>About Us</h4>  
+              <p>Ecobin is a smart, eco-friendly waste bin designed to promote sustainable waste management. It is equipped with IoT-based sensors and smart technology to detect and sort waste into appropriate categories such as organic, recyclable, and non-recyclable. The system aims to reduce human error in waste segregation and encourage responsible environmental behavior. <span> special offers.</span></p>
+            </div>
+    </section>
+
+    <section id="newsletter2" class="section-p1 section-m1">
+            <div class="newstext">
+              <h4>Our Mission and Vision</h4>  
+              <p>  At Ecobin, our mission is to provide a responsible and sustainable solution for disposing of unused or damaged electronics, ensuring they are safely recycled, repurposed, or transformed into valuable resources. We envision a world where every electronic device is given a second life, fostering a circular economy that minimizes waste and maximizes innovation. Ecobin aims to lead the global shift in e-waste management by empowering individuals and businesses to make eco-conscious choices, while inspiring industries to adopt sustainable practices that protect our planet for generations to come. <span> special offers.</span></p>
+            </div>
+    </section>
+
+    <section id="organizational" class="section-p1 section-m1">
+            <div class="newstext">
+                <p></p>
+            </div>
+    </section>
+
+
+    
+
+   <!-- Modal Structure -->
+<div id="product-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-button" onclick="closeModal()">&times;</span>
+        <div class="modal-body">
+            <img id="modal-product-image" src="" alt="" class="modal-image">
+            <div class="modal-details">
+                <h2 id="modal-product-name"></h2>
+                <p id="modal-product-description"></p>
+                <p id="modal-product-price"></p>
+                
+                <button id="add-to-cart-button" onclick="addToCart(modalProductName, modalProductPrice)">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <footer id="footer" class="section-p1">
+            <div class="col">
+                <img class="logo" src="./images/logo.png" alt="">
+                <h4>Contact</h4>
+                <p><strong>Address:</strong>19 Beitz Street,Brisbane,Queensland</p>
+                <p><strong>Phone:</strong>+61 123456789</p>
+                <p><strong>Hours:</strong>9am-5pm, Mon-Sat</p>
+                <h4>Follow Us</h4>
+                <div class="follow">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+            <div class="col">
+                <h4>About</h4>
+                <a href="#">About us</a>
+                <a href="#">Delivery Information</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms $ Conditions</a>
+                <a href="#">Contact Us</a>
+            </div>
+
+        </footer>
+</body>
+</html>
