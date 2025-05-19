@@ -96,23 +96,27 @@ html {
     margin-bottom: 3rem;
 }
 
+.legalheading h1 {
+    margin-top: 1cm;
+}
+
 .legal h2 {
     color: #2E7D32;
-    margin-left: 20px;
+    margin-left: 30px;
     margin-top: 2rem;
 }
 
 .legal h3 {
     color: #000000; 
-    margin-left: 30px;
-}
-
-.legal p {
     margin-left: 40px;
 }
 
-.legal ul {
+.legal p {
     margin-left: 70px;
+}
+
+.legal ul {
+    margin-left: 100px;
 }
 
 #mobile {
@@ -222,7 +226,7 @@ html {
 
 #form-details {
     display: flex;
-    background: #78c48b;
+    background: #9fe3b0;
     justify-content: space-between;
     margin: 30px;
     padding: 80px;
